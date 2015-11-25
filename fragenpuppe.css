@@ -19,7 +19,7 @@ body.paperdoll {
 
     background-color: #00b3ee;
 
-    box-shadow:  2px 2px 15px rgba(0, 91, 128, 0.47),
+    box-shadow: 2px 2px 15px rgba(0, 91, 128, 0.47),
     2px -5px 15px rgba(0, 91, 128, 0.47),
     -5px 2px 15px rgba(0, 91, 128, 0.47),
     -5px -5px 15px rgba(0, 91, 128, 0.47);
@@ -43,60 +43,92 @@ body.paperdoll {
     */
 }
 
+.paperdoll .knopf {
+    display: inline-block;
+    float: right;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+
+}
+.paperdoll .knopf:hover {
+    background-color: lightgreen;
+    color:green;
+}
+
+.paperdoll p.antwort {
+    margin-left: 10px;
+    border-left: 3px solid lightgreen;
+    min-height: 50px;
+    padding-left: 5px;
+}
+
 .paperdoll .selected {
     background-color: rgba(0, 91, 128, 0.47);
-/*
-    box-shadow:  2px 2px 15px rgba(0, 91, 128, 0.47),
-    2px -5px 15px rgba(0, 91, 128, 0.47),
-    -5px 2px 15px rgba(0, 91, 128, 0.47),
-    -5px -5px 15px rgba(0, 91, 128, 0.47);
-*/
+    /*
+        box-shadow:  2px 2px 15px rgba(0, 91, 128, 0.47),
+        2px -5px 15px rgba(0, 91, 128, 0.47),
+        -5px 2px 15px rgba(0, 91, 128, 0.47),
+        -5px -5px 15px rgba(0, 91, 128, 0.47);
+    */
 }
 
 .paperdoll h4.antwort.selected {
 
 }
 
-
 @-webkit-keyframes frage {
-    to { opacity: 0; }
+    to {
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes frage-out {
-    to { opacity: 1; }
+    to {
+        opacity: 0;
+    }
 }
 
 .paperdoll .question.ng-hide-add {
-    -webkit-animation: frage;
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-timing-function: ease-in-out ;
+    -webkit-animation: frage-out;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-fill-mode: forwards;
 }
 
 .paperdoll .question.ng-hide-remove {
     opacity: 0;
-    -webkit-animation: frage-out;
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-delay: 0.5s;
-    -webkit-animation-timing-function: ease-in-out ;
+    -webkit-animation: frage;
+    -webkit-animation-duration: 0.49s;
+    -webkit-animation-delay: 0.51s;
+    -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-fill-mode: forwards;
 }
 
 .paperdoll .question {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
 }
 
 .paperdoll .gamebox.ng-hide-add {
     -webkit-animation: frage;
     -webkit-animation-duration: 0.5s;
-    -webkit-animation-timing-function: ease-in-out ;
+    -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-fill-mode: forwards;
 }
+
 .paperdoll .gamebox.ng-hide-remove {
     opacity: 0;
     -webkit-animation: frage-out;
     -webkit-animation-duration: 0.5s;
     -webkit-animation-delay: 0.5s;
-    -webkit-animation-timing-function: ease-in-out ;
+    -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-fill-mode: forwards;
 }
 
@@ -104,27 +136,67 @@ body.paperdoll {
     position: relative;
 }
 
-.circle {
-    border-radius: 100%;
-    background-color: #00AA88;
-    padding: 0px;
-    margin: 0;
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    text-align: center;
-    vertical-align: middle;
+.paperdoll .about.ng-hide-add {
+    -webkit-animation: frage;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
 }
 
-.center {
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translateX(-50%) translateY(-50%);
+.paperdoll .about.ng-hide-remove {
+    opacity: 0;
+    -webkit-animation: frage-out;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
 }
+
+.paperdoll .about {
+}
+
+.paperdoll .gewinner {
+    padding: 10px;
+    margin: 15px 0 15px 0;
+    position: relative;
+}
+
+.paperdoll .kategorie0 {
+    background-color: rgba(34, 134, 184, 0.33);
+}
+
+.paperdoll .kategorie1 {
+    background-color: rgba(0, 204, 0, 0.24);
+}
+
+.paperdoll .kategorie2 {
+    background-color: rgba(122, 67, 182, 0.44);
+}
+
+/* Farbe der Fragen-Navigation */
+.nav-pills > li > a {
+    width:50px;
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    border-radius:25px;
+    text-align: center;
+}
+
+.nav-pills > li.active > a {
+    background-color:red;
+    width:50px;
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    border-radius:25px;
+    text-align: center;
+}
+
+.nav-pills > li.active > a:hover {
+    background-color:red;
+}
+
 
 .oben {
-    background-color: #2aabd2;
+    background-color: rgba(42, 171, 210, 0.45);
     height: 200px;
     padding-top: 50px;
 }
@@ -186,17 +258,20 @@ body.paperdoll {
 }
 
 @-webkit-keyframes pulse {
-    0% { opacity: 1;
+    0% {
+        opacity: 1;
         color: #0c0;
-        padding-left:15px;
+        padding-left: 15px;
     }
-    50% { opacity: 1;
+    50% {
+        opacity: 1;
         color: #fff;
-        padding-left:15px;
+        padding-left: 15px;
     }
-    100% { opacity: 0;
+    100% {
+        opacity: 0;
         color: #0c0;
-        padding-left:15px;
+        padding-left: 15px;
     }
 }
 
@@ -206,13 +281,13 @@ body.paperdoll {
     left: 0px;
     -webkit-animation: pulse 2s infinite;
     -webkit-animation-direction: normal;
-    -webkit-animation-timing-function: ease-in-out ;
+    -webkit-animation-timing-function: ease-in-out;
 }
 
 @media screen and (min-width: 0px) {
     .doll-box {
         position: relative;
-        height:200px;
+        height: 200px;
     }
 
     .oben {
@@ -227,13 +302,12 @@ body.paperdoll {
         /*    font-family: 'Comfortaa', cursive; */
     }
 
-
-    .paperdoll h1,h2,h3 {
+    .paperdoll h1, h2, h3 {
         font-family: 'Arvo', serif;
     }
 
     .paperdoll h3 {
-        font-size:12pt;
+        font-size: 12pt;
     }
 
     .paperdoll h4 {
@@ -246,14 +320,14 @@ body.paperdoll {
     }
 
     .paperdoll .scale {
-        zoom:50%;
+        zoom: 50%;
     }
 }
 
 @media screen and (min-width: 480px) {
     .doll-box {
         position: relative;
-        height:250px;
+        height: 250px;
     }
 
     .oben {
@@ -268,9 +342,8 @@ body.paperdoll {
         /*    font-family: 'Comfortaa', cursive; */
     }
 
-
     .paperdoll h3 {
-        font-size:20pt;
+        font-size: 20pt;
         font-family: 'Arvo', sans-serif;
     }
 
@@ -284,14 +357,14 @@ body.paperdoll {
     }
 
     .paperdoll .scale {
-        zoom:75%;
+        zoom: 75%;
     }
 }
 
 @media screen and (min-width: 768px) {
     .doll-box {
         position: relative;
-        height:380px;
+        height: 380px;
     }
 
     .oben {
@@ -306,9 +379,8 @@ body.paperdoll {
         /*    font-family: 'Comfortaa', cursive; */
     }
 
-
     .paperdoll h3 {
-        font-size:24pt;
+        font-size: 24pt;
         font-family: 'Arvo', sans-serif;
     }
 
@@ -322,7 +394,7 @@ body.paperdoll {
     }
 
     .paperdoll .scale {
-        zoom:100%;
+        zoom: 100%;
     }
 
 }

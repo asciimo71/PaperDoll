@@ -25,7 +25,7 @@
         };
     }]);
 
-    app.controller("PuppetController", ["$scope", function ($scope) {
+    app.controller("PuppetController", ["$scope","$timeout", "$document", function ($scope, $timeout, $document) {
         $scope.questions = fragenliste;
         $scope.qidx = 0;
 
@@ -59,6 +59,21 @@
             this.nextQuestion();
         };
 
+        this.scrollTo = function (elementId) {
+            $timeout(function() {
+                document.getElementById(elementId).scrollIntoView();
+            });
+        };
+
+        this.showAnswer = function(question, aIdx) {
+            question.antwort[aIdx].open = !question.antwort[aIdx].open;
+            this.scrollTo('qb'+question.index+''+aIdx);
+        };
+
+        this.isAnswerVisible = function(question, aIdx) {
+            return question.antwort[aIdx].open;
+        };
+
         this.isDressed = function(qIdx, aIdx) {
             return $scope.questions[qIdx].dresses[aIdx];
         };
@@ -90,45 +105,45 @@
             index : 0,
             frage : "Welche Frage würdest Du wohl stellen?",
             antwort : [
-                {cat: 0 , text : "Soll ich dir eine reinhauen?"},
-                {cat: 1 , text : "Warum hast Du keine Klamotten an?"},
-                {cat: 2 , text : "Wie schmeckt eigentlich Apfel mit Senf?"},
+                {cat: 0, open : false , headline: "Antwort A", text : "Soll ich dir eine reinhauen?"},
+                {cat: 1, open : false , headline: "Antwort B"  , text : "Warum hast Du keine Klamotten an?"},
+                {cat: 2, open : false , headline: "Antwort C"  , text : "Wie schmeckt eigentlich Apfel mit Senf?"},
             ]
         },
         {
             index : 1,
             frage : "Was ist die Quadratwurzel aus 45673882736?",
             antwort : [
-                {cat: 0 , text: "2"},
-                {cat: 1 , text: "29"},
-                {cat: 2 , text: "Ich kann kein Mathe."},
+                {cat: 0, open : false , headline: "Antwort A" , text: "2"},
+                {cat: 1, open : false , headline: "Antwort B"  , text: "29"},
+                {cat: 2, open : false , headline: "Antwort C"  , text: "Ich kann kein Mathe."},
             ]
         },
         {
             index : 2,
             frage : "Wieviele Seiten hat Tolstois dickstes Buch?",
             antwort : [
-                {cat: 0 , text: "2"},
-                {cat: 1 , text: "29"},
-                {cat: 2 , text: "Für Mathe hab ich mich noch nie interessiert."},
+                {cat: 0, open : false , headline: "Antwort A" , text: "2"},
+                {cat: 1, open : false , headline: "Antwort B"  , text: "29"},
+                {cat: 2, open : false , headline: "Antwort C"  , text: "Für Mathe hab ich mich noch nie interessiert."},
             ]
         },
         {
             index : 3,
             frage : "Welches Tier hat Schwarz-Weisse Streifen?",
             antwort : [
-                {cat: 0 , text: "Der Elefant."},
-                {cat: 1 , text: "29"},
-                {cat: 2 , text: "Mein Mathelehrer konnte mich noch nie besonders gut leiden!"},
+                {cat: 0, open : false , headline: "Antwort A" , text: "Der Elefant."},
+                {cat: 1, open : false , headline: "Antwort B" , text: "29"},
+                {cat: 2, open : false , headline: "Antwort C" , text: "Mein Mathelehrer konnte mich noch nie besonders gut leiden!"},
             ]
         },
         {
             index : 4,
             frage : "Wenn Du auf eine einsame Insel auswandern würdest, was wäre das erste Teil in deinem Koffer?",
             antwort : [
-                {cat: 0 , text: "Kondome"},
-                {cat: 1 , text: "Die Tageszeitung von gestern."},
-                {cat: 2 , text: "Ein Mathebuch, irgendwann muss ich das ja mal lernen."},
+                {cat: 0, open : false , headline: "Antwort A" , text: "Kondome"},
+                {cat: 1, open : false , headline: "Antwort B" , text: "Die Tageszeitung von gestern."},
+                {cat: 2, open : false , headline: "Antwort C" , text: "Ein Mathebuch, irgendwann muss ich das ja mal lernen."},
             ]
         },
     ]; // ende fragenliste
