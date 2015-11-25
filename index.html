@@ -195,26 +195,32 @@
                 </div>
             </div>
             <div class="col-xs-6">
-                <a href="">Nochmal von vorn ...</a>
+                <span class="btn btn-default" ng-mouseup="startCtrl.start()">Nochmal von vorn</span>
             </div>
             <div class="col-xs-6">
-                <span ng-mouseup="startCtrl.startBackground()">Hintergrund ...</span>
+                <span class="btn btn-primary" ng-mouseup="startCtrl.startBackground()">Hintergrund ...</span>
             </div>
         </div>
 
     </div>
     <div class="row" ng-show="startCtrl.inBackground()"
          ng-controller="BackgroundController as backCtrl">
-        <div class="col-xs-12" ng-repeat="page in backCtrl.pages()">
+        <div class="col-xs-12">
+            <ul class="nav nav-pills">
+                <li><a ng-mouseup="startCtrl.start()" style="width:5em;">Start</a></li>
+                <li ng-repeat="page in backCtrl.pages()" ng-class="(backCtrl.isCurrent(page)) ? 'active' : ''"><a
+                        ng-mouseup="backCtrl.goto(page)">{{page.index+1}}</a></li>
+
+            </ul>
+        </div>
+        <div class="col-xs-12" ng-repeat="page in backCtrl.pages()" ng-show="backCtrl.isCurrent(page)">
             <h3>{{page.title}}</h3>
-            1
+
             <div ng-bind-html="page.pagedata"></div>
-            2
-            <div ng-bind-html="{{page.pagedata}}"></div>
-            3
-            <div ng-bind-html-unsafe="page.pagedata"></div>
-            4
-            <div ng-bind-html-unsafe="{{page.pagedata}}"></div>
+            <span class="btn btn-primary" ng-show="backCtrl.hasPrevious()" ng-mouseup="backCtrl.previous()">Zurück</span>
+            <span  class="btn btn-default disabled" ng-hide="backCtrl.hasPrevious()" style="opacity:0.5;">Zurück</span>
+            <span class="btn btn-primary"  ng-show="backCtrl.hasNext()" ng-mouseup="backCtrl.next()">Weiter</span>
+            <span  class="btn btn-default disabled" ng-hide="backCtrl.hasNext()" style="opacity:0.5;">Weiter</span>
         </div>
     </div>
 </div>

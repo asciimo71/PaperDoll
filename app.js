@@ -8,7 +8,7 @@
 
 
     app.controller("StartController", ["$scope", function($scope) {
-        this.pageStatus = 3;
+        this.pageStatus = 0;
 
         this.showAbout = false;
 
@@ -17,7 +17,7 @@
         };
 
         this.start = function () {
-          pageStatus = 0;
+          window.location.reload();
         };
         this.inGame = function() {
             return (this.pageStatus === 2);
@@ -47,6 +47,10 @@
         var $this = this;
 
         fragenliste.forEach(function(qu) { qu.selected = -1; qu.dresses = ["","",""]; });
+
+        this.restart = function() {
+            fragenliste.forEach(function(qu) { qu.selected = -1; qu.dresses = ["","",""]; });
+        };
 
         this.nextQuestion = function() {
             $scope.qidx = ($scope.qidx+1) % 6;
@@ -114,13 +118,25 @@
     app.controller("BackgroundController", ["$scope", "$http", function($scope, $http) {
         var controller = this;
 
-        var current = 0;
+        this.current = 0;
 
+        this.goto = function(_page) {
+            this.current = _page.index;
+        };
+        this.hasPrevious = function() {
+            return this.current >0;
+        } ;
+        this.hasNext = function() {
+            return (this.current < this.pages().length-1);
+        } ;
         this.next = function () {
-            if( current < backgroundData.length-1 ) ++current;
+            if( this.current < backgroundData.length-1 ) ++this.current;
         };
         this.previous = function() {
-            if( current > 0) --current;
+            if( this.current > 0) --this.current;
+        };
+        this.isCurrent = function(_page) {
+            return (_page.index == this.current);
         };
         this.pages = function() {
             return backgroundData;
