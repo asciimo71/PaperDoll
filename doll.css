@@ -53,6 +53,12 @@
     z-index: 3;
 }
 
+/*
+   anziehen_-1: Ebene z-index: -1 - hinter allen anderen (keiner)
+   anziehen: Ebene z-index: 0 - Ebene der Puppe, Schuhe und Kleidung
+   anziehen_2: Ebene z-index: 2 - vor der Puppe, aber unter den Fingern: Accessoires (Uhr, Schirm etc)
+*/
+
 @-webkit-keyframes anziehen {
     to {
         top: 0px;
@@ -77,7 +83,7 @@
         width: 264px;
         height: 348px;
         opacity: 1;
-        z-index: 2;
+        z-index: 2;             /* hier wird die Ebene im letzten Augenblick definiert. */
     }
 }
 
@@ -95,14 +101,20 @@
         width: 264px;
         height: 348px;
         opacity: 1;
-        z-index: -1;
+        z-index: -1;        /* hier wird die Ebene im letzten Augenblick definiert. */
     }
 }
 
+/* hier werden die einzelnen Elemente definiert.
+   .doll .<accessoire> { content: url("der pfad zum passenden Bild"); }
+*/
 .doll .gummistiefel {
     content: url("res/paper-doll/gummie-stiefel.png");
 }
 
+/* hier werden die Elemente animiert,
+-webkit-animation: <keyframe> wählt die Anim mit Ebene und Zielposition aus.
+*/
 .doll .gummistiefel.animate {
     -webkit-animation: anziehen;
     -webkit-animation-duration: 2s;

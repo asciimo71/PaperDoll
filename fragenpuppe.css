@@ -137,18 +137,22 @@ body.paperdoll {
 }
 
 .paperdoll .about.ng-hide-add {
-    -webkit-animation: frage;
-    -webkit-animation-duration: 5s;
+    opacity: 1;
+    -webkit-animation: frage-out;
+    -webkit-animation-duration: 0.5s;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-fill-mode: forwards;
 }
 
 .paperdoll .about.ng-hide-remove {
     opacity: 0;
-    -webkit-animation: frage-out;
-    -webkit-animation-duration: 5s;
+    -webkit-animation: frage;
+    -webkit-animation-duration: 0.5s;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-fill-mode: forwards;
+}
+
+.paperdoll .about.ng-hide {
 }
 
 .paperdoll .about {
@@ -242,6 +246,7 @@ body.paperdoll {
     display: inline-block;
 }
 
+/* hier wird der PLAY Knopf definiert. */
 .paperdoll .front-doll-box .play-button {
     position: absolute;
     -webkit-border-radius: 50%;
@@ -257,6 +262,7 @@ body.paperdoll {
     padding-bottom: 2px;
 }
 
+/* das ist die Animation des Knopfes */
 @-webkit-keyframes pulse {
     0% {
         opacity: 1;
@@ -275,6 +281,9 @@ body.paperdoll {
     }
 }
 
+/* das ist die Formatierung des Zeichens innerhalb des runden Knopfes.
+   Hier wird auch die Verbindung zur Animation geschaffen.
+*/
 .paperdoll .front-doll-box .play-button .play-symbol {
     position: relative;
     top: -2px;
@@ -284,6 +293,10 @@ body.paperdoll {
     -webkit-animation-timing-function: ease-in-out;
 }
 
+/*
+über die MEDIA Queries werden die Puppe und Überschriften angepasst, damit sie noch auf den
+Bildschirm passen.
+*/
 @media screen and (min-width: 0px) {
     .doll-box {
         position: relative;
