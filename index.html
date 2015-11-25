@@ -19,6 +19,7 @@
 </head>
 <body class="paperdoll">
 <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
 <script type="text/javascript" src="node_modules/angular-animate/angular-animate.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
 
@@ -45,7 +46,7 @@
         </div>
     </div>
 
-    <div class="row" ng-hide="startCtrl.inGame()">
+    <div class="row" ng-show="startCtrl.inStart()">
         <div class="col-xs-12">
             <div class="front-doll-box scale">
                 <img src="res/paper-doll/puppe.png" class="front-doll">
@@ -193,6 +194,27 @@
                     </div>
                 </div>
             </div>
+            <div class="col-xs-6">
+                <a href="">Nochmal von vorn ...</a>
+            </div>
+            <div class="col-xs-6">
+                <span ng-mouseup="startCtrl.startBackground()">Hintergrund ...</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="row" ng-show="startCtrl.inBackground()"
+         ng-controller="BackgroundController as backCtrl">
+        <div class="col-xs-12" ng-repeat="page in backCtrl.pages()">
+            <h3>{{page.title}}</h3>
+            1
+            <div ng-bind-html="page.pagedata"></div>
+            2
+            <div ng-bind-html="{{page.pagedata}}"></div>
+            3
+            <div ng-bind-html-unsafe="page.pagedata"></div>
+            4
+            <div ng-bind-html-unsafe="{{page.pagedata}}"></div>
         </div>
     </div>
 </div>

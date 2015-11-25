@@ -4,14 +4,21 @@
 
 
 (function () {
-    var app = angular.module("paperdoll", ['ngAnimate']);
+    var app = angular.module("paperdoll", ['ngAnimate','ngSanitize']);
 
 
     app.controller("StartController", ["$scope", function($scope) {
-        this.pageStatus = 0;
+        this.pageStatus = 3;
 
         this.showAbout = false;
 
+        this.inStart = function() {
+            return (this.pageStatus === 0);
+        };
+
+        this.start = function () {
+          pageStatus = 0;
+        };
         this.inGame = function() {
             return (this.pageStatus === 2);
         };
@@ -22,6 +29,14 @@
 
         this.openAbout = function() {
             this.showAbout = !this.showAbout;
+        };
+
+        this.startBackground = function() {
+          this.pageStatus = 3;
+        };
+
+        this.inBackground = function() {
+            return (this.pageStatus === 3);
         };
     }]);
 
@@ -95,6 +110,32 @@
         };
     }]);
 
+
+    app.controller("BackgroundController", ["$scope", "$http", function($scope, $http) {
+        var controller = this;
+
+        var current = 0;
+
+        this.next = function () {
+            if( current < backgroundData.length-1 ) ++current;
+        };
+        this.previous = function() {
+            if( current > 0) --current;
+        };
+        this.pages = function() {
+            return backgroundData;
+        };
+        this.load = function(_page) {
+            $http({method: "get", url: _page.dataUrl}).success(function($result) {
+               _page.pagedata = $result;
+            });
+        };
+
+        backgroundData.forEach(function(_page) {
+            controller.load(_page);
+        });
+    }] );
+
     /* Hier ist die Liste der Fragen und Antworten. Hier dürft ihr alle Fragen und antworten reinschreiben.
      * Es sind nur 5 Fragen vorgesehen, jede Frage hat 3 Antworten.
      */
@@ -147,4 +188,43 @@
             ]
         },
     ]; // ende fragenliste
+
+    var backgroundData = [
+        {
+            index: 0,
+            title: "Die Überschrift Hintergrund 0",
+            dataUrl: "background/page0.html"
+        },
+        {
+            index: 1,
+            title: "Die Überschrift Hintergrund 1",
+            dataUrl: "background/page1.html"
+        },
+        {
+            index: 2,
+            title: "Die Überschrift Hintergrund 2",
+            dataUrl: "background/page2.html"
+        },
+        {
+            index: 3,
+            title: "Die Überschrift Hintergrund 3",
+            dataUrl: "background/page3.html"
+        },
+        {
+            index: 4,
+            title: "Die Überschrift Hintergrund 4",
+            dataUrl: "background/page4.html"
+        },
+        {
+            index: 5,
+            title: "Die Überschrift Hintergrund 5",
+            dataUrl: "background/page5.html"
+        },
+        {
+            index: 6,
+            title: "Die Überschrift Hintergrund 6",
+            dataUrl: "background/page6.html"
+        }
+    ];
+
 })();
