@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-xs-12">
+        <ul class="nav nav-pills">
+            <li><a href="#/start" style="width:5em;">Start</a></li>
+            <li ng-repeat="page in backCtrl.pages()" ng-class="(backCtrl.isCurrent(page)) ? 'active' : ''"><a
+                    ng-mouseup="backCtrl.goto(page)">{{page.index+1}}</a></li>
+
+        </ul>
+    </div>
+    <div class="col-xs-12" ng-repeat="page in backCtrl.pages()" ng-show="backCtrl.isCurrent(page)">
+        <h3>{{page.title}}</h3>
+
+        <div ng-bind-html="page.pagedata"></div>
+        <span class="btn btn-primary" ng-show="backCtrl.hasPrevious()" ng-mouseup="backCtrl.previous()">Zurück</span>
+        <span  class="btn btn-default disabled" ng-hide="backCtrl.hasPrevious()" style="opacity:0.5;">Zurück</span>
+        <span class="btn btn-primary"  ng-show="backCtrl.hasNext()" ng-mouseup="backCtrl.next()">Weiter</span>
+        <span  class="btn btn-default disabled" ng-hide="backCtrl.hasNext()" style="opacity:0.5;">Weiter</span>
+    </div>
+</div>

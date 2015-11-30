@@ -1,0 +1,127 @@
+<div class="row">
+    <div class="col-xs-6 col-xs-push-6 col-sm-4 col-sm-push-8 col-md-4 col-md-push-8 col-lg-4 col-lg-push-8 ">
+        <!-- die Doll-Box enthält alle Grafiken zur Puppe, sortiert nach Fragen
+             Die Ebenen der einzlenen Accessoires werden im Stylesheet doll.css definiert -->
+        <div class="doll-box">
+            <div class="doll">
+                <img class="dolly" src="res/paper-doll/puppe-no-finger.png"/>
+                <img class="dolly finger" src="res/paper-doll/puppe-nur-finger.png"/>
+                <!-- Jede Zeile ist das Accessoire einer Antwort. Die class bestimmt welches -->
+                <!-- Antworten zu Frage 0 -->
+                <img class="gummistiefel part" ng-class="qctrl.isDressed(0, 0)"/>
+                <img class="converse part" ng-class="qctrl.isDressed(0, 1)"/>
+                <img class="schirm part" ng-class="qctrl.isDressed(0, 2)"/>
+
+                <!-- Antworten zu Frage 1 -->
+                <img class="outdoor part" ng-class="qctrl.isDressed(1, 0)"/>
+                <img class="trenchcoat part" ng-class="qctrl.isDressed(1, 1)"/>
+                <img class="kittel part" ng-class="qctrl.isDressed(1, 2)"/>
+
+                <!-- Antworten zu Frage 2 -->
+                <img class="sonnenbrille part" ng-class="qctrl.isDressed(2, 0)"/>
+                <img class="taschen part" ng-class="qctrl.isDressed(2, 1)"/>
+                <img class="uhr part" ng-class="qctrl.isDressed(2, 2)"/>
+
+                <!-- Antworten zu Frage 3 -->
+                <img class="uhr part" ng-class="qctrl.isDressed(3, 0)"/>
+                <img class="gummistiefel part" ng-class="qctrl.isDressed(3, 1)"/>
+                <img class="converse part" ng-class="qctrl.isDressed(3, 2)"/>
+
+                <!-- Antworten zu Frage 4 -->
+                <img class="kittel part" ng-class="qctrl.isDressed(4, 0)"/>
+                <img class="outdoor part" ng-class="qctrl.isDressed(4, 1)"/>
+                <img class="schirm part" ng-class="qctrl.isDressed(4, 2)"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-6 col-xs-pull-6 col-sm-8 col-sm-pull-4 col-md-8 col-md-pull-4 col-lg-8 col-lg-pull-4 ">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div style="margin-top:5px">&nbsp;</div>
+                <ul class="nav nav-pills" ng-hide="qctrl.isCurrent(5)">
+                    <li ng-repeat="question in questions"
+                        ng-class="(qidx >= question.index) ? 'active' : ''"><a>{{1+question.index}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="question" ng-repeat="question in questions"
+                     ng-show="qctrl.isCurrent(question.index)">
+                    <div class="col-md-12">
+                        <h3 class="frage">{{question.frage}}</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="antwort" ng-class="qctrl.selected(question, 0)"
+                            ng-mouseup="qctrl.showAnswer(question, 0)">
+                            {{question.antwort[0].headline}}</h4>
+
+                        <div ng-show="qctrl.isAnswerVisible(question, 0)">
+
+                            <div class="antwort knopf" ng-mouseup="qctrl.selectAnswer(question, 0)">A</div>
+                            <p class="antwort">{{question.antwort[0].text}}
+                            </p>
+                            <a id="qb{{question.index}}0"></a></div>
+                    </div>
+                    <div class="col-md-12"><h4 ng-mouseup="qctrl.showAnswer(question, 1)"
+                                               class="antwort" ng-class="qctrl.selected(question, 1)">
+                        {{question.antwort[1].headline}}</h4>
+
+
+                        <div ng-show="qctrl.isAnswerVisible(question, 1)">
+                            <div class="antwort knopf" ng-mouseup="qctrl.selectAnswer(question, 1)">B</div>
+                            <p class="antwort">{{question.antwort[1].text}}
+                            </p>
+                            <a id="qb{{question.index}}1"></a></div>
+                    </div>
+                    <div class="col-md-12"><h4 ng-mouseup="qctrl.showAnswer(question, 2)"
+                                               class="antwort" ng-class="qctrl.selected(question, 2)">
+                        {{question.antwort[2].headline}}</h4>
+
+                        <div ng-show="qctrl.isAnswerVisible(question, 2)">
+                            <div class="antwort knopf" ng-mouseup="qctrl.selectAnswer(question, 2)">C</div>
+                            <p class="antwort">{{question.antwort[2].text}}</p>
+                            <a id="qb{{question.index}}2"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" ng-show="qctrl.isCurrent(5)">
+    <div class="question">
+        <div class="col-xs-8 col-sm-8 col-md-9 col-lg-8">
+
+            <div class="col-xs-12" ng-show="qctrl.winner() === 0">
+                <div class="gewinner kategorie0">
+                    <h1>GEWINNER TEXT KATEGORIE 0</h1>
+
+                    <p>hier könnt ihr euch austoben und mit HTML den Gewinnertext erstellen.</p>
+                </div>
+            </div>
+            <div class="col-xs-12" ng-show="qctrl.winner() === 1">
+                <div class="gewinner kategorie1">
+                    <h1>GEWINNER TEXT KATEGORIE 1</h1>
+
+                    <p>hier könnt ihr euch austoben und mit HTML den Gewinnertext erstellen.</p>
+                </div>
+            </div>
+            <div class="col-xs-12" ng-show="qctrl.winner() === 2">
+                <div class="gewinner kategorie2">
+                    <h1>GEWINNER TEXT KATEGORIE 2</h1>
+
+                    <p>hier könnt ihr euch austoben und mit HTML den Gewinnertext erstellen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <span class="btn btn-default" ng-mouseup="startCtrl.start()">Nochmal von vorn</span>
+    </div>
+    <div class="col-xs-6">
+        <span class="btn btn-primary" ng-mouseup="startCtrl.startBackground()">Hintergrund ...</span>
+    </div>
+</div>
