@@ -1,10 +1,29 @@
 
 body.paperdoll {
     font-family: 'Montserrat', sans-serif;
+    /*
+    bottom: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    */
+}
+
+.paperdoll-box {
+    margin: 15px;
+    padding: 15px;
+    background-color: #286090;
+ /*   right: 0px;
+    bottom: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    */
 }
 
 .paperdoll h3 {
-    font-family: 'Arvo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .paperdoll h4 {
@@ -19,10 +38,10 @@ body.paperdoll {
 
     background-color: #00b3ee;
 
-    box-shadow: 2px 2px 15px rgba(0, 91, 128, 0.47),
-    2px -5px 15px rgba(0, 91, 128, 0.47),
-    -5px 2px 15px rgba(0, 91, 128, 0.47),
-    -5px -5px 15px rgba(0, 91, 128, 0.47);
+    /*box-shadow: 2px 2px 15px rgba(0, 91, 128, 0.47),*/
+    /*2px -5px 15px rgba(0, 91, 128, 0.47),*/
+    /*-5px 2px 15px rgba(0, 91, 128, 0.47),*/
+    /*-5px -5px 15px rgba(0, 91, 128, 0.47);*/
 }
 
 .paperdoll h4.antwort {
@@ -207,7 +226,7 @@ body.paperdoll {
 
 .dollheader {
     color: white;
-    font-family: 'Arvo', serif;
+    font-family: 'Montserrat', serif;
     text-shadow: 1px 1px 1px #0d3349,
     1px -1px 1px #0d3349,
     -1px 1px 1px #0d3349,
@@ -215,7 +234,7 @@ body.paperdoll {
 }
 
 .dollheader .h1 {
-    font-family: 'Arvo', serif;
+    font-family: 'Montserrat', serif;
 }
 
 .dollheader .titleimg {
@@ -260,6 +279,14 @@ body.paperdoll {
     font-size: 40px;
     text-align: left;
     padding-bottom: 2px;
+}
+
+.paperdoll .front-doll-box .play-button a:hover {
+    text-decoration: none;
+}
+
+.paperdoll .front-doll-box .play-button a:visited {
+    color: #fff;
 }
 
 /* das ist die Animation des Knopfes */
@@ -316,7 +343,7 @@ Bildschirm passen.
     }
 
     .paperdoll h1, h2, h3 {
-        font-family: 'Arvo', serif;
+        font-family: 'Montserrat', serif;
     }
 
     .paperdoll h3 {
@@ -357,7 +384,7 @@ Bildschirm passen.
 
     .paperdoll h3 {
         font-size: 20pt;
-        font-family: 'Arvo', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .paperdoll h4 {
@@ -394,7 +421,7 @@ Bildschirm passen.
 
     .paperdoll h3 {
         font-size: 24pt;
-        font-family: 'Arvo', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .paperdoll h4 {

@@ -3,43 +3,15 @@
         <!-- die Doll-Box enthält alle Grafiken zur Puppe, sortiert nach Fragen
              Die Ebenen der einzlenen Accessoires werden im Stylesheet doll.css definiert -->
         <div class="doll-box">
-            <div class="doll">
-                <img class="dolly" src="res/paper-doll/puppe-no-finger.png"/>
-                <img class="dolly finger" src="res/paper-doll/puppe-nur-finger.png"/>
-                <!-- Jede Zeile ist das Accessoire einer Antwort. Die class bestimmt welches -->
-                <!-- Antworten zu Frage 0 -->
-                <img class="gummistiefel part" ng-class="qctrl.isDressed(0, 0)"/>
-                <img class="converse part" ng-class="qctrl.isDressed(0, 1)"/>
-                <img class="schirm part" ng-class="qctrl.isDressed(0, 2)"/>
-
-                <!-- Antworten zu Frage 1 -->
-                <img class="outdoor part" ng-class="qctrl.isDressed(1, 0)"/>
-                <img class="trenchcoat part" ng-class="qctrl.isDressed(1, 1)"/>
-                <img class="kittel part" ng-class="qctrl.isDressed(1, 2)"/>
-
-                <!-- Antworten zu Frage 2 -->
-                <img class="sonnenbrille part" ng-class="qctrl.isDressed(2, 0)"/>
-                <img class="taschen part" ng-class="qctrl.isDressed(2, 1)"/>
-                <img class="uhr part" ng-class="qctrl.isDressed(2, 2)"/>
-
-                <!-- Antworten zu Frage 3 -->
-                <img class="uhr part" ng-class="qctrl.isDressed(3, 0)"/>
-                <img class="gummistiefel part" ng-class="qctrl.isDressed(3, 1)"/>
-                <img class="converse part" ng-class="qctrl.isDressed(3, 2)"/>
-
-                <!-- Antworten zu Frage 4 -->
-                <img class="kittel part" ng-class="qctrl.isDressed(4, 0)"/>
-                <img class="outdoor part" ng-class="qctrl.isDressed(4, 1)"/>
-                <img class="schirm part" ng-class="qctrl.isDressed(4, 2)"/>
-            </div>
+            <doll></doll>
         </div>
     </div>
 
     <div class="col-xs-6 col-xs-pull-6 col-sm-8 col-sm-pull-4 col-md-8 col-md-pull-4 col-lg-8 col-lg-pull-4 ">
-        <div class="row">
+        <div class="row" ng-hide="qctrl.isCurrent(5)">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div style="margin-top:5px">&nbsp;</div>
-                <ul class="nav nav-pills" ng-hide="qctrl.isCurrent(5)">
+                <ul class="nav nav-pills">
                     <li ng-repeat="question in questions"
                         ng-class="(qidx >= question.index) ? 'active' : ''"><a>{{1+question.index}}</a>
                     </li>
@@ -119,9 +91,9 @@
         </div>
     </div>
     <div class="col-xs-6">
-        <span class="btn btn-default" ng-mouseup="startCtrl.start()">Nochmal von vorn</span>
+        <span class="btn btn-default" ng-mouseup="qctrl.restart()">Nochmal von vorn</span>
     </div>
     <div class="col-xs-6">
-        <span class="btn btn-primary" ng-mouseup="startCtrl.startBackground()">Hintergrund ...</span>
+        <a href="#/background"><span class="btn btn-primary">Hintergrund ...</span></a>
     </div>
 </div>

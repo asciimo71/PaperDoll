@@ -22,7 +22,14 @@
 <script type="text/javascript" src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
 <script type="text/javascript" src="node_modules/angular-animate/angular-animate.min.js"></script>
 <script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+
+
 <script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="routes.js"></script>
+<script type="text/javascript" src="services/PaperDollService.js"></script>
+<script type="text/javascript" src="controllers/StartController.js"></script>
+<script type="text/javascript" src="controllers/PuppetController.js"></script>
+<script type="text/javascript" src="controllers/BackgroundController.js"></script>
 
 <!--
     Wenn immer der ganze Schirm ausgenutzt werden soll, dann muss hier die class container-fluid
@@ -31,24 +38,13 @@
 
      <div class="container-fluid" ng-controller="StartController as startCtrl">
 -->
-<div class="container" ng-controller="StartController as startCtrl">
-    <div class="row oben">
-        <div class="col-xs-12">
-            <div class="text-center dollheader">
-                <div class="h1">
-                    <div class="titletext">PaperDoll</div>
-                    <img src="res/puppe.png" class="titleimg">
 
-                    <div class="titlequote">
-                        <div>"Wir hätten da ein paar Fragen ..."</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="paperdoll-box">
+    <div class="container">
+
+        <div ng-view></div>
+
     </div>
-
-
 </div>
-
 </body>
 </html>
