@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="local apache" uploadOnCheckin="c4638fde-8a2a-4672-9e36-97a0ad998c69">
+  <component name="PublishConfigData" autoUpload="Always" serverName="Local In Place" uploadOnCheckin="c4638fde-8a2a-4672-9e36-97a0ad998c69">
     <serverData>
-      <paths name="local">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="local apache">
+      <paths name="local apache (surface)">
         <serverdata>
           <mappings>
             <mapping deploy="fragenpuppe" local="$PROJECT_DIR$" web="/fragenpuppe" />

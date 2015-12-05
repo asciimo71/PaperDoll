@@ -3,24 +3,45 @@
 var app = angular.module("paperdoll");
 
 app.controller("PuppetController",
-    ["$scope", "$timeout", "$document", "$routeParams", "$location", "$window", "PaperDoll",
-        function ($scope, $timeout, $document, $routeParams, $location, $window, PaperDoll) {
+    ["$scope", "$timeout", "$document", "$routeParams", "$location", "$window", "PaperDoll", "Model",
+        function ($scope, $timeout, $document, $routeParams, $location, $window, PaperDoll, Model) {
             $scope.questions = PaperDoll.fragenliste;
             $scope.qidx = 0;
+
+            $scope.image = Model.getImageFor(Model.sequence);
+            $scope.background = "";
 
             if( $routeParams.questionId ) {
                 console.log("QuestionId is " + $routeParams.questionId)
                 $scope.qidx = $routeParams.questionId;
             }
 
+            if( $routeParams.place ) {
+                console.log("place is " + $routeParams.place);
+                $scope.place = $routeParams.place;
+            }
+
             console.log("$scope.qidx is " + $scope.qidx + " check " + ($scope.qidx == 4));
 
-            var controller = this;
+            if( $scope.place == "background" ) {
+                $scope.background = $scope.questions[$scope.qidx].background;
+            }
 
-            PaperDoll.fragenliste.forEach(function (qu) {
-                qu.selected = -1;
-                qu.dresses = ["", "", ""];
-            });
+            if( $scope.place == "image" ) {
+                $scope.image = Model.getImageFor(Model.sequence);
+            }
+
+            if( $scope.place == "finals" ) {
+                $scope.image = Model.getImageFor(Model.sequence);
+            }
+
+            if( $scope.place == "question" && $scope.qidx == 0 ) {
+                PaperDoll.fragenliste.forEach(function (qu) {
+                    qu.selected = -1;
+                    qu.dresses = ["", "", ""];
+                });
+            }
+/*
 
             this.restart = function () {
                 PaperDoll.fragenliste.forEach(function (qu) {
@@ -30,14 +51,20 @@ app.controller("PuppetController",
                 $location.path("/");
                 $window.location.href = $window.location.href;
             };
+*/
 
             this.nextQuestion = function () {
-                $scope.qidx = ($scope.qidx + 1) % 6;
+                $scope.qidx++;
+                if( $scope.qidx == 5) {
+                    $location.path("/score/" + Model.getCodeFor(Model.sequence));
+                }
+                else {
+                    $location.path("/game/" + ($scope.qidx) + "/question");
+                }
             };
 
-            this.previousQuestion = function () {
-                var t = $scope.qidx - 1;
-                $scope.qidx = ( t >= 0) ? t : 4;
+            this.toImage = function() {
+                $location.path("/game/" + $scope.qidx + "/image");
             };
 
             this.selected = function (quest, idx) {
@@ -51,16 +78,22 @@ app.controller("PuppetController",
             this.selectAnswer = function (question, answer) {
                 question.selected = answer;
                 question.selectedCat = question.antwort[answer].cat;
-                question.dresses = ["", "", ""]; // clear dress animation
-                question.dresses[answer] = "animate"; // animate new dress
+                //question.dresses = ["", "", ""]; // clear dress animation
+                //question.dresses[answer] = "animate"; // animate new dress
 
-                this.nextQuestion();
+                Model.sequence[question.index] = question.selectedCat;
+                PaperDoll.loadBackgroundQuestion(question.index, function() {
+                    $location.path("/game/" + question.index + "/background")
+                });
+
             };
 
             this.scrollTo = function (elementId) {
+                /*
                 $timeout(function () {
                     document.getElementById(elementId).scrollIntoView();
                 });
+                */
             };
 
             this.showAnswer = function (question, aIdx) {
@@ -76,20 +109,5 @@ app.controller("PuppetController",
                 return $scope.questions[qIdx].dresses[aIdx];
             };
 
-            this.winner = function () {
-                var stats = [0, 0, 0];
-                PaperDoll.fragenliste.forEach(function (qu) {
-                    stats[qu.selectedCat]++;
-                });
-
-                var winner = 0;
-                for (var i = 1; i < stats.length; i++) {
-                    if (stats[i] > stats[winner]) {
-                        winner = i;
-                    }
-                }
-
-                return winner;
-            };
         }]);
 
