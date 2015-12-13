@@ -34,7 +34,7 @@ app.factory('Model', ['$http', function ModelService($http) {
             var result = this.getCodeFor(seq);
 
             if( result.length > 0 ) {
-                result = "res/" + result + ".jpeg";
+                result = "res/" + result + ".jpg";
             }
 
             return result;

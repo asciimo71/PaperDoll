@@ -48,8 +48,5 @@ app.controller("ScoreController",
                 $window.location.href = $window.location.href;
             };
 
-            this.tweet = function() {
-                // TODO implement twitter sending of message
-            };
         }]);
 
