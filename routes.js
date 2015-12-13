@@ -18,15 +18,15 @@ app.config(['$routeProvider',
             controller: 'PuppetController',
             controllerAs: 'qctrl'
         }).
-        when('/background', {
-            templateUrl: 'templates/background/view.html',
-            controller: 'BackgroundController',
-            controllerAs: 'backCtrl'
+        when('/game/:questionId/:place', {
+            templateUrl: 'templates/game/view.html',
+            controller: 'PuppetController',
+            controllerAs: 'qctrl'
         }).
-        when('/background/:pageId', {
-            templateUrl: 'templates/background/view.html',
-            controller: 'BackgroundController',
-            controllerAs: 'backCtrl'
+        when('/score/:score', {
+            templateUrl: 'templates/score/view.html',
+            controller: 'ScoreController',
+            controllerAs: 'scoreCtrl'
         }).
         when('/', {
             templateUrl: 'templates/start/view.html',

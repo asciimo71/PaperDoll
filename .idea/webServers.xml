@@ -2,8 +2,11 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="c4638fde-8a2a-4672-9e36-97a0ad998c69" name="local apache" url="http://localhost">
-        <fileTransfer mountedRoot="C:\workspace\xampp\htdocs" accessType="MOUNT" />
+      <webServer id="c4638fde-8a2a-4672-9e36-97a0ad998c69" name="local apache (surface)" url="http://localhost">
+        <fileTransfer mountedRoot="$APPLICATION_HOME_DIR$/bin/C:\workspace\xampp\htdocs" accessType="MOUNT" />
+      </webServer>
+      <webServer id="70937692-d07e-461b-a5d3-540f306b82d6" name="Local In Place" url="http://localhost:8000">
+        <fileTransfer accessType="LOCAL" />
       </webServer>
     </option>
   </component>

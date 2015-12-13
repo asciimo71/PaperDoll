@@ -2,7 +2,7 @@
 
 var app = angular.module('paperdoll');
 
-app.factory('PaperDoll', ['$http', function PaperDollService($http) {
+app.factory('PaperDoll', ['$http', '$window', function PaperDollService($http, $window) {
 
     return {
 
@@ -12,57 +12,42 @@ app.factory('PaperDoll', ['$http', function PaperDollService($http) {
         fragenliste: [
             {
                 index: 0,
-                frage: "Welche Frage würdest Du wohl stellen?",
+                frage: "In welcher Geräuschkulisse fühlst du dich am wohlsten?",
                 antwort: [
-                    {cat: 0, open: false, headline: "Antwort A", text: "Soll ich dir eine reinhauen?"},
-                    {cat: 1, open: false, headline: "Antwort B", text: "Warum hast Du keine Klamotten an?"},
-                    {cat: 2, open: false, headline: "Antwort C", text: "Wie schmeckt eigentlich Apfel mit Senf?"},
+                    {cat: 'L', open: false, headline: "Antwort A", text: "Soll ich dir eine reinhauen?"},
+                    {cat: 'S', open: false, headline: "Antwort B", text: "Warum hast Du keine Klamotten an?"},
                 ]
             },
             {
                 index: 1,
-                frage: "Was ist die Quadratwurzel aus 45673882736?",
+                frage: "Gibt es Geschwindigkeit bei dir auch ohne -rausch?",
                 antwort: [
-                    {cat: 0, open: false, headline: "Antwort A", text: "2"},
-                    {cat: 1, open: false, headline: "Antwort B", text: "29"},
-                    {cat: 2, open: false, headline: "Antwort C", text: "Ich kann kein Mathe."},
+                    {cat: 'L', open: false, headline: "Antwort A", text: "2"},
+                    {cat: 'S', open: false, headline: "Antwort B", text: "29"},
                 ]
             },
             {
                 index: 2,
-                frage: "Wieviele Seiten hat Tolstois dickstes Buch?",
+                frage: "Was gehen dich deine Nachbarn an?",
                 antwort: [
-                    {cat: 0, open: false, headline: "Antwort A", text: "2"},
-                    {cat: 1, open: false, headline: "Antwort B", text: "29"},
-                    {cat: 2, open: false, headline: "Antwort C", text: "Für Mathe hab ich mich noch nie interessiert."},
+                    {cat: 'L', open: false, headline: "Antwort A", text: "2"},
+                    {cat: 'S', open: false, headline: "Antwort B", text: "29"},
                 ]
             },
             {
                 index: 3,
-                frage: "Welches Tier hat Schwarz-Weisse Streifen?",
+                frage: "Wie oft brauchst du Kultur?",
                 antwort: [
-                    {cat: 0, open: false, headline: "Antwort A", text: "Der Elefant."},
-                    {cat: 1, open: false, headline: "Antwort B", text: "29"},
-                    {
-                        cat: 2,
-                        open: false,
-                        headline: "Antwort C",
-                        text: "Mein Mathelehrer konnte mich noch nie besonders gut leiden!"
-                    }
+                    {cat: 'L', open: false, headline: "Antwort A", text: "Der Elefant."},
+                    {cat: 'S', open: false, headline: "Antwort B", text: "29"},
                 ]
             },
             {
                 index: 4,
-                frage: "Wenn Du auf eine einsame Insel auswandern würdest, was wäre das erste Teil in deinem Koffer?",
+                frage: "Wann kaufst du ein?",
                 antwort: [
-                    {cat: 0, open: false, headline: "Antwort A", text: "Kondome"},
-                    {cat: 1, open: false, headline: "Antwort B", text: "Die Tageszeitung von gestern."},
-                    {
-                        cat: 2,
-                        open: false,
-                        headline: "Antwort C",
-                        text: "Ein Mathebuch, irgendwann muss ich das ja mal lernen."
-                    }
+                    {cat: 'L', open: false, headline: "Antwort A", text: "Kondome"},
+                    {cat: 'S', open: false, headline: "Antwort B", text: "Die Tageszeitung von gestern."},
                 ]
             }
         ], // ende fragenliste
@@ -108,6 +93,14 @@ app.factory('PaperDoll', ['$http', function PaperDollService($http) {
         loadBackgroundPage: function (_page) {
             $http({method: "get", url: _page.dataUrl}).success(function ($result) {
                 _page.pagedata = $result;
+            });
+        },
+        loadBackgroundQuestion: function( _idx, onSuccess ) {
+            var _question = this.fragenliste[_idx];
+            var _url = 'background/questions/' + _idx + '/' + _question.selectedCat + '.html';
+            $http({method: "get", url: _url}).success(function ($result) {
+                _question.background = $result;
+                onSuccess();
             });
         }
 

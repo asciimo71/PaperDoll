@@ -10,17 +10,63 @@ body.paperdoll {
     */
 }
 
+.paperdoll .container {
+    background-image: url("res/beton.jpg");
+    background-repeat: repeat;
+    margin: 30px;
+    height: 1024px;
+}
+
 .paperdoll-box {
     margin: 15px;
     padding: 15px;
-    background-color: #286090;
- /*   right: 0px;
-    bottom: 0px;
+    color: white;
+/*    background-color: #286090;
     position: absolute;
+    right: 0px;
+    bottom: 0px;
     top: 0;
     left: 0;
     */
 }
+
+/*
+Header styles
+- start
+- game
+- result
+*/
+.paperdoll .start-header {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.paperdoll .start-header img {
+    height:100px;
+}
+
+.paperdoll .game-header {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+.paperdoll .game-header img {
+    height:50px;
+}
+
+.paperdoll .finals-header {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.paperdoll .finals-header img {
+    height:100px;
+}
+
+/* ******************** */
 
 .paperdoll h3 {
     font-family: 'Montserrat', sans-serif;
@@ -129,7 +175,7 @@ body.paperdoll {
 }
 
 .paperdoll .question {
-    position: absolute;
+    /* position: absolute; */
     top: 0px;
     left: 0px;
 
@@ -261,16 +307,14 @@ body.paperdoll {
 
 .paperdoll .front-doll-box {
     position: relative;
-    float: right;
-    display: inline-block;
+    text-align: center;
 }
 
 /* hier wird der PLAY Knopf definiert. */
 .paperdoll .front-doll-box .play-button {
-    position: absolute;
+    position: relative;
+    display: inline-block;
     -webkit-border-radius: 50%;
-    top: 150px;
-    left: 79px;
     width: 50px;
     height: 50px;
     background-color: #00CC00;
