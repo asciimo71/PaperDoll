@@ -39,6 +39,8 @@ app.controller("ScoreController",
             }
 
 
+            $timeout = window.twttr.widgets.load();
+
             this.restart = function () {
                 PaperDoll.fragenliste.forEach(function (qu) {
                     qu.selected = -1;
