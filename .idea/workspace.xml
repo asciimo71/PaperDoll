@@ -4,32 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/fragenpuppe.css" line="102" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="136181d8-7894-4048-8dba-93e0253df4ec" name="Default" comment="ngRoute und Code und Daten besser aufgeteilt">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/directives/antwort/template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/directives/navigation/template.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/background/page0.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/background/page1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/background/page2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/background/page3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/background/page4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/background/page5.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/background/page6.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/BackgroundController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doll.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/background/view.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/ScoreController.js" afterPath="$PROJECT_DIR$/controllers/ScoreController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/StartController.js" afterPath="$PROJECT_DIR$/controllers/StartController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fragenpuppe.css" afterPath="$PROJECT_DIR$/fragenpuppe.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/PaperDollService.js" afterPath="$PROJECT_DIR$/services/PaperDollService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/game/view.html" afterPath="$PROJECT_DIR$/templates/game/view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/score/view.html" afterPath="$PROJECT_DIR$/templates/score/view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/start/view.html" afterPath="$PROJECT_DIR$/templates/start/view.html" />
-    </list>
+    <list default="true" id="136181d8-7894-4048-8dba-93e0253df4ec" name="Default" comment="" />
     <ignored path="angular.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -564,26 +539,32 @@
       <option name="project" value="LOCAL" />
       <updated>1449233119420</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="font-size angepasst&#10;weiter knopf nur unten&#10;about in den score bereich verschoben&#10;navigation bar aus dem code in eine directive verschoben&#10;Auswahl der Antworten angepasst &#10;Buttons A+B Buttons entfernt&#10;Unbenutzte Dateien entfernt&#10;Thema Hintergrund angepasst&#10;">
+      <created>1454844195376</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1454844195376</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1874" height="1096" extended-state="7" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15686275" sideWeight="0.61764705" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15686275" sideWeight="0.61764705" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.50217867" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.50653595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.4912854" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15686275" sideWeight="0.38235295" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.49554068" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.49346405" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32398754" sideWeight="0.49782136" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.49782136" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.49782136" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -631,7 +612,8 @@
     <MESSAGE value="about box" />
     <MESSAGE value="bootstrap 3 entfernt&#10;ngRoute restrukturierung" />
     <MESSAGE value="ngRoute und Code und Daten besser aufgeteilt" />
-    <option name="LAST_COMMIT_MESSAGE" value="ngRoute und Code und Daten besser aufgeteilt" />
+    <MESSAGE value="font-size angepasst&#10;weiter knopf nur unten&#10;about in den score bereich verschoben&#10;navigation bar aus dem code in eine directive verschoben&#10;Auswahl der Antworten angepasst &#10;Buttons A+B Buttons entfernt&#10;Unbenutzte Dateien entfernt&#10;Thema Hintergrund angepasst&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="font-size angepasst&#10;weiter knopf nur unten&#10;about in den score bereich verschoben&#10;navigation bar aus dem code in eine directive verschoben&#10;Auswahl der Antworten angepasst &#10;Buttons A+B Buttons entfernt&#10;Unbenutzte Dateien entfernt&#10;Thema Hintergrund angepasst&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
