@@ -1,6 +1,7 @@
 
 body.paperdoll {
     font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
     /*
     bottom: 0px;
     position: absolute;
@@ -11,13 +12,12 @@ body.paperdoll {
 }
 
 .paperdoll .container {
-    background-image: url("res/beton.jpg");
-    background-repeat: repeat;
+    background: url("res/beton.jpg") repeat;
     margin: 30px;
-    height: 1024px;
+    height: 2048px;
 }
 
-.paperdoll-box {
+.paperdoll .paperdoll-box {
     margin: 15px;
     padding: 15px;
     color: white;
@@ -36,33 +36,13 @@ Header styles
 - game
 - result
 */
-.paperdoll .start-header {
+.paperdoll .all-header {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
 
 }
-.paperdoll .start-header img {
-    height:100px;
-}
-
-.paperdoll .game-header {
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-
-}
-.paperdoll .game-header img {
-    height:50px;
-}
-
-.paperdoll .finals-header {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-}
-.paperdoll .finals-header img {
+.paperdoll .all-header img {
     height:100px;
 }
 
@@ -82,7 +62,7 @@ Header styles
     -moz-border-radius: 5px;
     border-radius: 5px;
 
-    background-color: #00b3ee;
+    background-color: rgba(76,76,76,0.32);
 
     /*box-shadow: 2px 2px 15px rgba(0, 91, 128, 0.47),*/
     /*2px -5px 15px rgba(0, 91, 128, 0.47),*/

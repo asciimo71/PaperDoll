@@ -4,7 +4,8 @@ var app = angular.module("paperdoll");
 
 app.controller("ScoreController",
     ["$scope", "$timeout", "$document", "$routeParams", "$location", "$window", "PaperDoll", "Model",
-        function ($scope, $timeout, $document, $routeParams, $location, $window, PaperDoll, Model) {
+        function ($scope, $timeout, $document, $routeParams, $location, $window, PaperDoll, Model)
+        {
             $scope.questions = PaperDoll.fragenliste;
             $scope.qidx = 0;
 
@@ -48,6 +49,12 @@ app.controller("ScoreController",
                 });
                 $location.path("/");
                 $window.location.href = $window.location.href;
+            };
+
+            this.showAbout = false;
+
+            this.openAbout = function () {
+                this.showAbout = !this.showAbout;
             };
 
         }]);

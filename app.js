@@ -14,6 +14,30 @@
         };
     });
 
+    app.directive('pdNavigation', function() {
+        return {
+            templateUrl: 'directives/navigation/template.html',
+            restrict: 'E',
+            scope: {
+                show: '=',
+                current: '=',
+                questions: '='
+            }
+        };
+    });
+
+    app.directive('pdAntwort', function() {
+        return {
+            templateUrl: 'directives/antwort/template.html',
+            restrict: 'AE',
+            scope: {
+                index: '=',
+                question: '=',
+                onanswer: '=',
+                answerclass: '='
+            }
+        };
+    });
 
 
 

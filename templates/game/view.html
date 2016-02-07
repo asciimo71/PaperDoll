@@ -1,21 +1,11 @@
 <div class="row">
-    <div class="col-xs-12 game-header">
+    <div class="col-xs-12 all-header">
         <img src="res/lis.png">
     </div>
 </div>
 <div class="row">
 
-    <!-- progress-counter - bei welcher Stufe sind wir gerade? -->
-    <div class="row" ng-hide="qctrl.isCurrent(5)">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div style="margin-top:5px">&nbsp;</div>
-            <ul class="nav nav-pills">
-                <li ng-repeat="question in questions"
-                    ng-class="(qidx >= question.index) ? 'active' : ''"><a>{{1+question.index}}</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <pd-navigation show="qctrl.isCurrent(5)" current="qidx" questions="questions"></pd-navigation>
 
     <!-- eine Frage mit ihren Antworten wird ausgegeben -->
     <div class="row">
@@ -25,54 +15,19 @@
                 <div class="col-md-12">
                     <h3 class="frage">{{question.frage}}</h3>
                 </div>
-                <div class="col-md-12">
-                    <h4 class="antwort" ng-class="qctrl.selected(question, 0)"
-                        ng-mouseup="qctrl.showAnswer(question, 0)">
-                        {{question.antwort[0].headline}}</h4>
-
-                    <div ng-show="qctrl.isAnswerVisible(question, 0)">
-
-                        <div class="antwort knopf" ng-mouseup="qctrl.selectAnswer(question, 0)">A</div>
-                        <p class="antwort">{{question.antwort[0].text}}
-                        </p>
-                        <a id="qb{{question.index}}0"></a></div>
-                </div>
-                <div class="col-md-12"><h4 ng-mouseup="qctrl.showAnswer(question, 1)"
-                                           class="antwort" ng-class="qctrl.selected(question, 1)">
-                    {{question.antwort[1].headline}}</h4>
-
-
-                    <div ng-show="qctrl.isAnswerVisible(question, 1)">
-                        <div class="antwort knopf" ng-mouseup="qctrl.selectAnswer(question, 1)">B</div>
-                        <p class="antwort">{{question.antwort[1].text}}
-                        </p>
-                        <a id="qb{{question.index}}1"></a></div>
-                </div>
-                <!-- nur noch 2 Antworten pro Frage!
-                <div class="col-md-12"><h4 ng-mouseup="qctrl.showAnswer(question, 2)"
-                                           class="antwort" ng-class="qctrl.selected(question, 2)">
-                    {{question.antwort[2].headline}}</h4>
-
-                    <div ng-show="qctrl.isAnswerVisible(question, 2)">
-                        <div class="antwort knopf" ng-mouseup="qctrl.selectAnswer(question, 2)">C</div>
-                        <p class="antwort">{{question.antwort[2].text}}</p>
-                        <a id="qb{{question.index}}2"></a>
-                    </div>
-                </div>
-                -->
+                <div class="col-md-12" pd-antwort index="0" question="question" onanswer="qctrl.selectAnswer" answerclass="qctrl.selected"></div>
+                <div class="col-md-12" pd-antwort index="1" question="question" onanswer="qctrl.selectAnswer" answerclass="qctrl.selected"></div>
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-show="place == 'background'">
             <div class="row">
-                <div class="col-xs-12" style="text-align: center;">
-                    <div class="btn btn-default" ng-mouseup="qctrl.toImage()">Weiter</div>
-                </div>
+
                 <div class="col-xs-12">
                     <div ng-bind-html="background"></div>
                 </div>
-                <div class="col-xs-12" style="text-align: center;">
-                    <div class="btn btn-default" ng-mouseup="qctrl.toImage()">Weiter</div>
+                <div class="col-xs-push-5 col-xs-2" style="text-align: center;">
+                    <div class="btn-lg btn-default" ng-mouseup="qctrl.toImage()">Weiter</div>
                 </div>
             </div>
         </div>

@@ -52,44 +52,6 @@ app.factory('PaperDoll', ['$http', '$window', function PaperDollService($http, $
             }
         ], // ende fragenliste
 
-        backgroundData: [
-            {
-                index: 0,
-                title: "Die Überschrift Hintergrund 0",
-                dataUrl: "background/page0.html"
-            },
-            {
-                index: 1,
-                title: "Die Überschrift Hintergrund 1",
-                dataUrl: "background/page1.html"
-            },
-            {
-                index: 2,
-                title: "Die Überschrift Hintergrund 2",
-                dataUrl: "background/page2.html"
-            },
-            {
-                index: 3,
-                title: "Die Überschrift Hintergrund 3",
-                dataUrl: "background/page3.html"
-            },
-            {
-                index: 4,
-                title: "Die Überschrift Hintergrund 4",
-                dataUrl: "background/page4.html"
-            },
-            {
-                index: 5,
-                title: "Die Überschrift Hintergrund 5",
-                dataUrl: "background/page5.html"
-            },
-            {
-                index: 6,
-                title: "Die Überschrift Hintergrund 6",
-                dataUrl: "background/page6.html"
-            }
-        ] // Ende Background Data
-        ,
         loadBackgroundPage: function (_page) {
             $http({method: "get", url: _page.dataUrl}).success(function ($result) {
                 _page.pagedata = $result;

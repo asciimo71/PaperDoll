@@ -1,6 +1,6 @@
 
 <div class="row">
-    <div class="col-xs-12 game-header">
+    <div class="col-xs-12 all-header">
         <img src="res/lis.png">
     </div>
 </div>
@@ -72,9 +72,20 @@ Und das liebe Geld? Solltest du dich fragen, was es bei der Sache Stadt/Land fin
         </div>
     </div>
  
- 
-	
-	<div class="col-xs-6">
+ </div>
+<div class="row">
+
+
+    <div class="col-xs-5">
         <span class="btn btn-default" ng-mouseup="scoreCtrl.restart()">Nochmal von vorn</span>
+
+
+        <span class="btn btn-default" ng-mouseup="scoreCtrl.openAbout()">Wer macht denn sowas?</span>
     </div>
+    <div class="col-xs-7">
+        <div class="about" ng-show="scoreCtrl.showAbout">
+            Dieses Quiz entstand 2015 im Rahmen des Zertifikatskurses "Visuelle Publizistik" an der Akademie für Publizistik in Hamburg. Idee, Konzept, Redaktion: Mareike Parchmann und Tamara Weise / Programmierung: Thomas Strauß
+        </div>
+    </div>
+
 </div>
