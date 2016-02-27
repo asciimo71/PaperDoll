@@ -40,15 +40,22 @@ app.controller("ScoreController",
             }
 
 
+            $scope.$on("$routeChangeSuccess", function($currentRoute, $previousRoute) {
+                $window.scrollTo(0, 0);
+            });
+
             $timeout = window.twttr.widgets.load();
 
             this.restart = function () {
                 PaperDoll.fragenliste.forEach(function (qu) {
                     qu.selected = -1;
+                    qu.selectedCat = undefined;
                     qu.dresses = ["", "", ""];
                 });
+                Model.reset();
                 $location.path("/");
-                $window.location.href = $window.location.href;
+                $window.scrollTo(0, 0);
+                $location.path("/start");
             };
 
             this.showAbout = false;

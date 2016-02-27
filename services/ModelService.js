@@ -43,6 +43,10 @@ app.factory('Model', ['$http', function ModelService($http) {
         loadFromString : function(seqString) {
             var arr = seqString.split('_');
             this.sequence = arr;
+        },
+
+        reset : function() {
+            this.sequence = ["", "", "", "", ""];
         }
     };
 

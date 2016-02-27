@@ -10,9 +10,9 @@
                         </div>
                     </div>
                     -->
-        <ul class="nav nav-pills">
-            <li ng-repeat="question in questions"
-                ng-class="(current >= question.index) ? 'active' : ''"><a>{{1+question.index}}</a>
+        <ul class="nav badge">
+            <li ng-repeat="question in questions" style="display: inline-block;"
+                ng-class="(current >= question.index) ? 'active' : ''"><img ng-src="{{badgeUrl(question.selectedCat)}}" width="50px"/>
             </li>
         </ul>
     </div>

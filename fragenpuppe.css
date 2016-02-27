@@ -140,6 +140,10 @@ Header styles
     */
 }
 
+.paperdoll .badge {
+    background-color: transparent;
+}
+
 .paperdoll h4.antwort.selected {
 
 }

@@ -41,6 +41,10 @@ app.controller("PuppetController",
                     qu.dresses = ["", "", ""];
                 });
             }
+
+            $scope.$on("$routeChangeSuccess", function($currentRoute, $previousRoute) {
+                $window.scrollTo(0, 0);
+            });
 /*
 
             this.restart = function () {

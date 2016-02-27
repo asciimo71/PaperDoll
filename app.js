@@ -22,7 +22,20 @@
                 show: '=',
                 current: '=',
                 questions: '='
-            }
+            },
+            controller: ['$scope', function($scope) {
+                $scope.badgeUrl = function (badge) {
+                    if( badge === 'L') {
+                        return "res/land-badge.png";
+                    }
+                    else if( badge === 'S' ) {
+                        return "res/stadt-badge.png";
+                    }
+                    else {
+                        return "res/leer-badge.png";
+                    }
+                }
+            }]
         };
     });
 
