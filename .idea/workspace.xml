@@ -5,200 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/doll.css" line="217" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="136181d8-7894-4048-8dba-93e0253df4ec" name="Default" comment="ngRoute und Code und Daten besser aufgeteilt">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/background/questions/page1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/CNAME" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/_config.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/_includes/ads.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/_includes/footer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/_includes/header.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/_includes/nav-components.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/_includes/nav-css.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/_includes/nav-customize.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/_includes/nav-getting-started.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/_includes/nav-javascript.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/_includes/nav-main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/_includes/old-bs-docs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/_includes/social-buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/_layouts/default.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/_layouts/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/css/docs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/css/pygments-manni.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/ico/apple-touch-icon-114-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/ico/apple-touch-icon-144-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/ico/apple-touch-icon-57-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/ico/apple-touch-icon-72-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/ico/favicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/js/application.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/js/customizer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/js/filesaver.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/js/holder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/js/html5shiv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/js/jszip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/js/less.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/js/raw-files.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/js/respond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/assets/js/uglify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/browserstack.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/components.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/css.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/customize.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/dist/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/dist/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/dist/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/dist/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/dist/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/dist/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/carousel/carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/carousel/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/grid/grid.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/grid/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/jumbotron-narrow/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/jumbotron-narrow/jumbotron-narrow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/jumbotron/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/jumbotron/jumbotron.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/justified-nav/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/justified-nav/justified-nav.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/navbar-fixed-top/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/navbar-fixed-top/navbar-fixed-top.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/navbar-static-top/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/navbar-static-top/navbar-static-top.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/navbar/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/navbar/navbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/non-responsive/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/non-responsive/non-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/offcanvas/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/offcanvas/offcanvas.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/offcanvas/offcanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/screenshots/carousel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/screenshots/grid.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/screenshots/jumbotron-narrow.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/screenshots/jumbotron.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/screenshots/justified-nav.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/screenshots/navbar-fixed.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/screenshots/navbar-static.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/screenshots/navbar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/screenshots/non-responsive.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/screenshots/offcanvas.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/screenshots/sign-in.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/screenshots/starter-template.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/screenshots/sticky-footer-navbar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/screenshots/sticky-footer.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/screenshots/theme.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/signin/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/signin/signin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/starter-template/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/starter-template/starter-template.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/sticky-footer-navbar/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/sticky-footer-navbar/sticky-footer-navbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/sticky-footer/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/sticky-footer/sticky-footer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/theme/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/examples/theme/theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/getting-started.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/javascript.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/affix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/unit/affix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/unit/alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/unit/button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/unit/carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/unit/collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/unit/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/unit/modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/unit/phantom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/unit/popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/unit/scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/unit/tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/unit/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/unit/transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/vendor/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/vendor/qunit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tests/vendor/qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/js/transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/badges.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/bootstrap.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/breadcrumbs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/button-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/carousel.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/close.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/code.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/component-animations.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/dropdowns.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/forms.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/glyphicons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/grid.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/input-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/jumbotron.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/labels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/list-group.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/media.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/modals.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/navs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/normalize.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/pager.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/panels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/popovers.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/print.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/progress-bars.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/responsive-utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/scaffolding.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/tables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/theme.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/thumbnails.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/tooltip.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/type.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/less/wells.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/twitter-bootstrap-3.0.0/package.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/lis.png" afterPath="$PROJECT_DIR$/res/lis.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/ScoreController.js" afterPath="$PROJECT_DIR$/controllers/ScoreController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fragenpuppe.css" afterPath="$PROJECT_DIR$/fragenpuppe.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/PaperDollService.js" afterPath="$PROJECT_DIR$/services/PaperDollService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/game/view.html" afterPath="$PROJECT_DIR$/templates/game/view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/score/view.html" afterPath="$PROJECT_DIR$/templates/score/view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/start/view.html" afterPath="$PROJECT_DIR$/templates/start/view.html" />
-    </list>
+    <list default="true" id="136181d8-7894-4048-8dba-93e0253df4ec" name="Default" comment="ngRoute und Code und Daten besser aufgeteilt" />
     <ignored path="angular.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -218,11 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.6571426">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.26771653">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/background/view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.125">
+              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -231,8 +48,8 @@
       <file leaf-file-name="view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/score/view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-52.5">
+              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
@@ -240,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScoreController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScoreController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/ScoreController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.11714771">
+            <state vertical-scroll-proportion="0.0">
               <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
@@ -253,7 +70,7 @@
       <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/directives/doll/template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.8">
+            <state vertical-scroll-proportion="0.0">
               <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
               <folding />
             </state>
@@ -263,7 +80,7 @@
       <file leaf-file-name="fragenpuppe.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fragenpuppe.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-50.514286">
+            <state vertical-scroll-proportion="0.0">
               <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
               <folding />
             </state>
@@ -320,9 +137,9 @@
         <option value="$PROJECT_DIR$/directives/twtr-load-script.html" />
         <option value="$PROJECT_DIR$/directives/twtr/twtr-load-script.html" />
         <option value="$PROJECT_DIR$/directives/twtr/twtr-load-script.js" />
+        <option value="$PROJECT_DIR$/controllers/ScoreController.js" />
         <option value="$PROJECT_DIR$/templates/score/view.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/controllers/ScoreController.js" />
       </list>
     </option>
   </component>
@@ -348,8 +165,8 @@
     </layout>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
+    <option name="x" value="372" />
+    <option name="y" value="79" />
     <option name="width" value="1849" />
     <option name="height" value="1102" />
   </component>
@@ -406,6 +223,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -420,7 +238,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fragenpuppe" />
+              <option name="myItemId" value="PaperDoll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -430,18 +248,53 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fragenpuppe" />
+              <option name="myItemId" value="PaperDoll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragenpuppe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PaperDoll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="score" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragenpuppe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PaperDoll" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="background" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -449,9 +302,9 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="C:/workspace/xampp/htdocs/fragenpuppe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -603,14 +456,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1849" height="1102" extended-state="6" />
-    <editor active="false" />
+    <frame x="372" y="79" width="1849" height="1102" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26923078" sideWeight="0.62460065" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27188185" sideWeight="0.6171761" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31284302" sideWeight="0.5111483" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31284302" sideWeight="0.48885173" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26923078" sideWeight="0.37539935" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.319802" sideWeight="0.5111483" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.49554068" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27188185" sideWeight="0.38282388" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.49554068" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -623,8 +476,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35729167" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31284302" sideWeight="0.48885173" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.49554068" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -922,19 +775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/background/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.7142856">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/background/questions/0/S.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -942,7 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,13 +793,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fragenpuppe.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-50.514286">
+        <state vertical-scroll-proportion="0.0">
           <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
           <folding />
         </state>
@@ -966,9 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.6285715">
           <caret line="87" column="10" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,15 +815,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4857143">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="31" />
-          <folding>
-            <marker date="1450040272985" expanded="true" signature="1000:1014" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/directives/doll/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.8">
+        <state vertical-scroll-proportion="0.0">
           <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
           <folding />
         </state>
@@ -1006,28 +842,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/controllers/ScoreController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6571426">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/background/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/score/view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-52.5">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/ScoreController.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11714771">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.26771653">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
